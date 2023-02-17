@@ -3,6 +3,11 @@ div{
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: auto;
+    height: 100vh;
+    background-color: aquamarine;
+    border: 2px solid  black;
 
-    
 }
