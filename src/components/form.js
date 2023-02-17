@@ -4,21 +4,17 @@ export default function Form() {
     
     let [name,setName] = useState('')
 
-const handleOnChange = (e) => {
-        console.log(e.target.value)
-        setName = (e) =>{
-            name = e.target.value
 
-        }
-        }
+    const fullName = `${name}`
+        
     
   return (
 
     
     <div>
         <h1>Your Name</h1>
-        <input type="text" onChange={handleOnChange}></input>
-        {name}
+        <input type="text" value={name} onChange={e => setName(e.target.value)}></input>
+        {fullName}
     </div>
   )
 }
