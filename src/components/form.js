@@ -13,13 +13,13 @@ export default function Form() {
   return (
 
     
-    <div>
+    <div className='form-wrapper'>
         <h1>Your Name Form</h1>
         <p>Name</p>
         <input type="text" value={name} onChange={e => setName(e.target.value)}></input>
         <p>Last Name</p>
         <input type="text" value={lastName} onChange={e => setLastName(e.target.value)}></input>
-        {fullName}
+        <h2>{fullName}</h2>
     </div>
   )
 }
